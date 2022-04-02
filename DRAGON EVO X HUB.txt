@@ -1,3 +1,5 @@
+game.Players.LocalPlayer:Kick("Scrip has updated")
+
 if game:GetService("CoreGui"):FindFirstChild("FluxLib") then
     game:GetService("CoreGui"):FindFirstChild("FluxLib"):Destroy()
 end
@@ -24,11 +26,4 @@ AutoFarm:Button("สคริปตัวเก่าอันที่1", "old"
 end)
 AutoFarm:Bind("Key Bind", Enum.KeyCode.Q, function()
 
-end)
-local tab2 = win:Tab("Miscccccccc.", "http://www.roblox.com/asset/?id=6022668888")
-tab2:Button("Destroy GUI","",function()
-    game.CoreGui.FluxLib:Destroy()
-end)
-tab2:Slider("Walkspeed", "",0,500,16,function(t)
-    game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = t
 end)
