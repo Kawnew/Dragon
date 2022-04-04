@@ -1,5 +1,3 @@
-game.Players.LocalPlayer:Kick("Scrip has updated")
-
 if game:GetService("CoreGui"):FindFirstChild("FluxLib") then
     game:GetService("CoreGui"):FindFirstChild("FluxLib"):Destroy()
 end
@@ -16,14 +14,24 @@ end)
 tab:Line()
 local AutoFarm = win:Tab("หน้าหลัก", "http://www.roblox.com/asset/?id=6023426915")
 AutoFarm:Toggle("Auto Farm ", "ฟาร์ม",false, function(State)
-
+game.Players.LocalPlayer:Kick("นี่คือการทดลองสคริป 1วัน!")
 end)
 AutoFarm:Button("สคริปตัวเก่าอันที่2(สีฟ้า)", "ตัวใหม่",  function(t)
-    loadstring(game:HttpGet"https://pastebin.com/raw/rUVTdgtY")()
+    loadstring(game:HttpGet"https://pastebin.com/raw/K4azsQd7")()
 end)
 AutoFarm:Button("สคริปตัวเก่าอันที่1", "old", function(t)
-
+loadstring(game:HttpGet"https://pastebin.com/raw/KVpKkyii")
+()
 end)
 AutoFarm:Bind("Key Bind", Enum.KeyCode.Q, function()
 
 end)
+local tab2 = win:Tab("อื่นๆ.", "http://www.roblox.com/asset/?id=6022668888")
+tab2:Button("ปิดหน้าต่างแบบเปิดอีกไม่ได้","อย่าเล่นพิเรนเด้อสู",function()
+    game.CoreGui.FluxLib:Destroy()
+end)
+tab2:Slider("Walkspeed", "",0,500,16,function(t)
+    game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = t
+end)
+---การอัพเดต
+---ตรวจสอบ:ไม่มีการอัพเดต
